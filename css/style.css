@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #141922;
+}
+
+.header-sidebar{
+    height: 800px;
+    width: 300px;
+    background-color: black;
+    
+    position: fixed;
+}
+
+.banner{
+    height: 5rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    flex-direction: row;
+}
