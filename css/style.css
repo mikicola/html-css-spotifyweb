@@ -23,13 +23,44 @@ body{
     
     position: sticky;
     top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 2.5rem;
+    margin: 1rem;
+}
+
+button{
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
 nav{
     display: flex;
     justify-content: center;
+    
 }
 
 ul{
-    flex-direction: row;
+    /* display: inline; */
 }
+
+.nav-ul li{
+    display: inline;
+    text-decoration: none;
+}
+
+.ul-sidebar{
+    padding-top: 5rem;
+    margin-left: 1.5rem;
+}
+
+.cover{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+
