@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,50 +10,80 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+
 <body>
-    <header class="header-sidebar">
-        <ul class="ul-sidebar">
-            <li><button>Home</button></li>
-            <li><button>Cerca</button></li>
-            <li><button>La tua libreria</button></li>
-        </ul>
-
-        <title>Playlist</title>
-
-    </header>
-
     <div class="banner">
-        <img class="logo" src="img/logo.svg" alt="">
         <button>Effettua l'upgrade</button>
     </div>
-    
-    <main>
-        <nav>
-            <ul class="nav-ul">
-                <li><button>In evidenza</button></li>
-                <li><button>Podcast</button></li>
-                <li><button>Classifiche</button></li>
-                <li><button>Generi e mood</button></li>
-                <li><button>Nuove uscite</button></li>
-                <li><button>Scopri</button></li>
+
+
+    <div id="wrapper">
+        <header class="header-sidebar">
+            <img class="logo" src="img/logo.svg" alt="">
+            <ul class="ul-sidebar">
+                <li><button>Home</button></li>
+                <li><button>Cerca</button></li>
+                <li><button>La tua libreria</button></li>
             </ul>
-        </nav>
-        <section>
-            <!-- recently played -->
-            <div class="cover"></div>
-        </section>
 
-        <section>
-            <!-- Creato per Jhon Doe -->
-        </section>
+            <title>Playlist</title>
 
-        <section>
-            <!-- Artisti più popolari -->
-        </section>
-    </main>
+        </header>
+
+        <main>
+            <nav>
+                <ul class="nav-ul">
+
+                    <li><button>In evidenza</button></li>
+                    <li><button>Podcast</button></li>
+                    <li><button>Classifiche</button></li>
+                    <li><button>Generi e mood</button></li>
+                    <li><button>Nuove uscite</button></li>
+                    <li><button>Scopri</button></li>
+                </ul>
+            </nav>
+            <section class="contenitor">
+                <!-- recently played -->
+                <h1>Recently played</h1>
+                <div class="cover-contenitor clearfix">
+                    <div class="cover">
+                            <div class="flex">
+                            <div class="content"><img src="img/aquietplace.jpeg" alt=""></div>
+                            <section>
+                                <h2>Heavy Metal</h2>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="cover"></div>
+                    <div class="cover"></div>
+                    <div class="cover"></div>
+                    <div class="cover"></div>
+                    <div class="cover"></div>
+
+
+                    <!-- <div class="cover"> <img src="img/aquietplace.jpeg" alt=""></div>
+                    <div class="cover"> <img src="img/aquietplace.jpeg" alt=""></div>
+                    <div class="cover"> <img src="img/aquietplace.jpeg" alt=""></div>
+                    <div class="cover"> <img src="img/aquietplace.jpeg" alt=""></div>
+                    <div class="cover"> <img src="img/aquietplace.jpeg" alt=""></div>
+                    <div class="cover"> <img src="img/aquietplace.jpeg" alt=""></div> -->
+                </div>
+            </section>
+
+            <section>
+                <!-- Creato per Jhon Doe -->
+            </section>
+
+            <section>
+                <!-- Artisti più popolari -->
+            </section>
+        </main>
+    </div>
 
     <footer>
         <!-- footer con player -->
     </footer>
 </body>
+
 </html>

@@ -4,33 +4,61 @@
     box-sizing: border-box;
 }
 
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
 body{
     background-color: #141922;
 }
 
-.header-sidebar{
-    height: 800px;
-    width: 300px;
-    background-color: black;
-    
-    position: fixed;
+.clearfix{
+    content: '';
+    display: table;
+    clear: both;
 }
 
 .banner{
-    height: 5rem;
+    height: 80px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     
     position: sticky;
     top: 0;
     z-index: 10;
+    /* display: flex;
+    justify-content: flex-end; */
+    text-align: right;
+    overflow: hidden;
+    margin-top: -80px;
+}
+
+.header-sidebar{
+    min-height: 100%;
+    width: 300px;
+    background-color: black;
+    /* position: fixed; */
+}
+
+#wrapper{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+}
+
+main{
+    margin-top: 80px;
+    width: 100%;
+    /* height: 100%; */
 }
 
 .logo{
     height: 2.5rem;
     margin: 1rem;
+    z-index: 11;
+    position: relative;
 }
 
 button{
@@ -54,13 +82,70 @@ ul{
 }
 
 .ul-sidebar{
-    padding-top: 5rem;
+   
     margin-left: 1.5rem;
 }
 
-.cover{
-    height: 100px;
-    width: 100px;
-    background-color: aqua;
+
+.contenitor{
+    padding: 1rem;
 }
 
+h1{
+    color: white;
+    padding: 1rem 0;
+}
+
+.cover-contenitor{
+    /* display: flex; */
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.cover{
+    /* min-height: 150px;
+    min-width: 150px; */
+    background-color: aqua;
+    margin: 0 .5rem 1rem 0;
+    float: left;
+    width: calc((100% - 3rem) / 6);
+
+    position: relative;
+    display: flex;
+    /* width: 50%; */
+}
+
+.cover::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cover-contenitor img{
+    height: 100%;
+}
+
+.cover-contenitor h2{
+    color: white;
+    
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #282828;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    overflow: hidden;
+}
