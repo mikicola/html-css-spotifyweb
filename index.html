@@ -9,11 +9,15 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="banner">
-        <button>Effettua l'upgrade</button>
+        <button id="upgrade">Effettua l'upgrade</button>
     </div>
 
 
@@ -21,15 +25,15 @@
         <header class="header-sidebar">
             <img class="logo" src="img/logo.svg" alt="">
             <ul class="ul-sidebar">
-                <li><button>Home</button></li>
-                <li><button>Cerca</button></li>
-                <li><button>La tua libreria</button></li>
+                <li><button><img class="icon" src="img/home.svg" alt="">Home</button></li>
+                <li><button><img class="icon" src="img/search.svg" alt="">Cerca</button></li>
+                <li><button><img class="icon" src="img/libreria.svg" alt="">La tua libreria</button></li>
             </ul>
 
             <ul class="ul-playlist">
                 <li>Playlist</li>
                 <ul>
-                    <li>Crea Playlist</li>
+                    <li><i class="fas fa-plus-square plus-icon"></i>Crea Playlist</li>
                     <li>Nome Playlist</li>
                     <li>Nome Playlist</li>
                     <li>Nome Playlist</li>
@@ -43,52 +47,52 @@
         </header>
 
         <main>
-            <nav>
-                <ul class="nav-ul">
+            <div class="content">
+                <nav>
+                    <ul class="nav-ul">
+                        <li><button>In evidenza</button></li>
+                        <li><button>Podcast</button></li>
+                        <li><button>Classifiche</button></li>
+                        <li><button>Generi e mood</button><li>
+                        <li><button>Nuove uscite</button></li>
+                        <li><button>Scopri</button></li>
+                    </ul>
+                </nav>
+                <section class="contenitor">
+                    <!-- recently played -->
+                    <h2>Recently played</h2>
+                    <div class="cover-contenitor clearfix">
+                        <div class="cover">
 
-                    <li><button>In evidenza</button></li>
-                    <li><button>Podcast</button></li>
-                    <li><button>Classifiche</button></li>
-                    <li><button>Generi e mood</button></li>
-                    <li><button>Nuove uscite</button></li>
-                    <li><button>Scopri</button></li>
-                </ul>
-            </nav>
-            <section class="contenitor">
-                <!-- recently played -->
-                <h2>Recently played</h2>
-                <div class="cover-contenitor clearfix">
-                    <div class="cover">
+                            <div class="img-content"><img src="img/aquietplace.jpeg" alt="">
+                            
+                                <h3>Heavy Metal</h3>
+                            
+                        </div>
+                        </div>
 
-                        <div class="content"><img src="img/aquietplace.jpeg" alt=""></div>
-                        <section class="title">
-                            <h3>Heavy Metal</h3>
-                        </section>
+                        <div class="cover"></div>
+                        <div class="cover"></div>
+                        <div class="cover"></div>
+                        <div class="cover"></div>
+                        <div class="cover"></div>
 
                     </div>
+                </section>
 
-                    <div class="cover"></div>
-                    <div class="cover"></div>
-                    <div class="cover"></div>
-                    <div class="cover"></div>
-                    <div class="cover"></div>
+                <section>
+                    <!-- Creato per Jhon Doe -->
+                </section>
 
-                </div>
-            </section>
-
-            <section>
-                <!-- Creato per Jhon Doe -->
-            </section>
-
-            <section>
-                <!-- Artisti più popolari -->
-            </section>
-
-
+                <section>
+                    <!-- Artisti più popolari -->
+                </section>
+                
+            </div>
         </main>
     </div>
 
-    <footer>
+    <footer id="player">
         <!-- footer con player -->
     </footer>
 </body>
