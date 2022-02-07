@@ -13,7 +13,7 @@ body{
     background-color: #141922;
 }
 
-.clearfix{
+.clearfix::after{
     content: '';
     display: table;
     clear: both;
@@ -72,18 +72,23 @@ nav{
     
 }
 
-ul{
-    /* display: inline; */
-}
-
 .nav-ul li{
     display: inline;
     text-decoration: none;
 }
 
-.ul-sidebar{
+.ul-sidebar, .ul-playlist{
    
     margin-left: 1.5rem;
+}
+
+.ul-playlist, .ul-playlist ul{
+    list-style-type: none;
+}
+
+.ul-playlist li{
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -91,7 +96,7 @@ ul{
     padding: 1rem;
 }
 
-h1{
+h2{
     color: white;
     padding: 1rem 0;
 }
@@ -135,7 +140,13 @@ h1{
     height: 100%;
 }
 
-.cover-contenitor h2{
+.title{
+    position: relative;
+    top: 70px;;
+
+}
+
+.cover-contenitor h3{
     color: white;
     
 }
