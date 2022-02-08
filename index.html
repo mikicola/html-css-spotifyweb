@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,36 +24,54 @@
     <div id="wrapper">
         <header class="header-sidebar">
             <img class="logo" src="img/logo.svg" alt="">
-            <ul class="ul-sidebar">
-                <li><button><img class="icon" src="img/home.svg" alt="">Home</button></li>
-                <li><button><img class="icon" src="img/search.svg" alt="">Cerca</button></li>
-                <li><button><img class="icon" src="img/libreria.svg" alt="">La tua libreria</button></li>
-            </ul>
+<!-- LISTA LATERALE -->
+            <nav class="nav-sidebar">
+                <ul class="ul-sidebar">
+                    <li><button><img class="icon" src="img/home.svg" alt="">Home</button></li>
+                    <li><button><img class="icon" src="img/search.svg" alt="">Cerca</button></li>
+                    <li><button><img class="icon" src="img/libreria.svg" alt="">La tua libreria</button></li>
 
-            <ul class="ul-playlist">
-                <li>Playlist</li>
-                <ul>
-                    <li><i class="fas fa-plus-square plus-icon"></i>Crea Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
                 </ul>
-            </ul>
+                
+                <ul class="ul-playlist">
+                    <li>Playlist</li>
+                    <ul>
+                        <li><i class="fas fa-plus-square plus-icon"></i>Crea Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+                </ul>
 
+                <ul class="ul-sidebar user">
+                <li><button><img class="mini icon space" src="img/download.svg" alt="">Installa l'app</button></li>
+                <li>
+                    <div>
+                        <div class="round">
+                            <img class="icon" src="img/profile.svg" alt="">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            </nav>
         </header>
+
+
+
 
         <main>
             <div class="content">
-                <nav>
+                <nav class="nav-main">
                     <ul class="nav-ul">
                         <li><button>In evidenza</button></li>
                         <li><button>Podcast</button></li>
                         <li><button>Classifiche</button></li>
-                        <li><button>Generi e mood</button><li>
+                        <li><button>Generi e mood</button>
+                        <li>
                         <li><button>Nuove uscite</button></li>
                         <li><button>Scopri</button></li>
                     </ul>
@@ -65,10 +83,12 @@
                         <div class="cover">
 
                             <div class="img-content"><img src="img/aquietplace.jpeg" alt="">
-                            
+
                                 <h3>Heavy Metal</h3>
-                            
-                        </div>
+
+                                <h4>Subtitle</h4>
+
+                            </div>
                         </div>
 
                         <div class="cover"></div>
@@ -87,7 +107,7 @@
                 <section>
                     <!-- Artisti più popolari -->
                 </section>
-                
+
             </div>
         </main>
     </div>

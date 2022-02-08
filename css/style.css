@@ -6,7 +6,7 @@
 
 :root {
 	--width-header: 4rem;
-	--height-overlay-upgrade: 6rem;
+	--height-banner: 6rem;
 	--height-footer: 6rem;
 }
 
@@ -14,6 +14,21 @@
 	:root {
 		--width-header: 10rem;
 	}
+
+    
+}
+
+@media screen and (max-width: 540px) {
+    .cover{
+        background-color: rebeccapurple;
+        margin: 0 .5rem 1rem 0;
+        width: calc((100% - 3rem) / 3);
+    }
+    
+    .ul-sidebar{
+        align-items: center;
+    }
+    
 }
 
 html, body{
@@ -34,37 +49,49 @@ body{
 .banner{
     
     background-color: rgba(0, 0, 0, 0.3);
-    text-align: right;
+    /* text-align: right; */
     position: fixed;
 	top: 0;
 	right: 0;
 	width: calc(100% - var(--width-header));
-	height: var(--height-overlay-upgrade);
+	height: var(--height-banner);
 	background-color: rgba(0, 0, 0, 0.3);
 	z-index: 10;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
+
+/* button */
 #upgrade{
+    margin-right: 1.5rem;
     border: solid 1px white;
     border-radius: 50px;
     padding: .7rem 2rem;
     font-weight: 600;
 }
 
-.header-sidebar{
-    overflow: hidden;
-    background-color: black;
-    /* position: fixed; */
+#upgrade:hover{
+    transform: scale(1.1);
 }
+
 
 #wrapper{
     display: flex;
     flex-direction: row;
     height: calc(100vh - 100px);
-   
+    
     height: 100vh;
 }
 
+.header-sidebar{
+    overflow: hidden;
+    background-color: black;
+    /* position: fixed; */
+    flex: 0 0 var(--width-header);
+}
 
 header, main {
 	height: calc(100% - var(--height-footer));
@@ -76,16 +103,13 @@ header, main {
     height: 100%;
 } */
 
-.header-sidebar {
-    flex: 0 0 var(--width-header);
-}
 main {
     flex: 1 0 0;
     overflow-y: auto;
 }
 
 main .content {
-	margin: calc( var(--height-overlay-upgrade) + 1rem) 1rem 2rem 1rem;
+	margin: calc( var(--height-banner) + 1rem) 1rem 2rem 1rem;
 }
 
 .logo{
@@ -109,20 +133,39 @@ button{
     
 }
 
-
-nav{
+.nav-sidebar{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    
+    
+
+    /* gap: 50px; */
+}
+
+.user{
+    position: absolute;
+    bottom: 6rem;
+}
+
+
+.ul-sidebar{
+    display: flex;
+    flex-direction: column;
     
 }
 
-.nav-ul li{
-    display: inline;
-    text-decoration: none;
+
+.ul-sidebar li{
+    margin-bottom: .8rem;
+    opacity: 0.6;
+}
+
+.ul-sidebar li:hover{
+    opacity: 1;
 }
 
 .ul-sidebar, .ul-playlist{
-   
+    
     margin-left: 1.5rem;
 }
 
@@ -139,10 +182,32 @@ nav{
     height: 1.5rem;
 }
 
+.mini{
+    height: 1.2rem;
+}
+
+.round{
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #797b80;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 .plus-icon{
     font-size: 2rem;
 }
 
+/* main */
+.nav-main{
+    display: flex;
+    justify-content: center;
+    
+}
+.nav-ul li{
+    display: inline;
+    text-decoration: none;
+}
 .contenitor{
     /* padding: 1rem; */
 }
@@ -201,6 +266,13 @@ h2{
     color: white;
     text-align: center;
     font-size: 1rem;
+}
+
+.cover-contenitor h4{
+    color: #797b80;
+    text-align: center;
+    font-size: .7rem;
+    padding-top: .3rem;
 }
 
 #player {
