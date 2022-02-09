@@ -23,36 +23,40 @@
 
     <div id="wrapper">
         <header class="header-sidebar">
-            <img class="logo" src="img/logo.svg" alt="">
+            <img class="visible-xs logo" src="img/logo-small.svg" alt="">
+            <img class="hidden-xs logo" src="img/logo.svg" alt="">
 <!-- LISTA LATERALE -->
             <nav class="nav-sidebar">
                 <ul class="ul-sidebar">
-                    <li><button><img class="icon" src="img/home.svg" alt="">Home</button></li>
-                    <li><button><img class="icon" src="img/search.svg" alt="">Cerca</button></li>
-                    <li><button><img class="icon" src="img/libreria.svg" alt="">La tua libreria</button></li>
+                    <li class="selected"><button><img class="icon" src="img/home.svg" alt=""><div class="hidden-xs">Home</div></button></li>
+                    <li><button><img class="icon" src="img/search.svg" alt=""><div class="hidden-xs">Cerca</div></button></li>
+                    <li><button><img class="icon" src="img/libreria.svg" alt=""><div class="hidden-xs">La tua libreria</div></button></li>
 
                 </ul>
                 
-                <ul class="ul-playlist">
-                    <li>Playlist</li>
-                    <ul>
-                        <li><i class="fas fa-plus-square plus-icon"></i>Crea Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                    </ul>
+                <ul class="ul-playlist hidden-xs">
+                    <li><h2>Playlist</h2></li>
+                    
+                        <li class="flex plus"><i class="fas fa-plus-square plus-icon"></i> <div class="crete-pl"> Crea Playlist</div></li>
+                        <li><button>Nome Playlist</button></li>
+                        <li><button>Nome Playlist</button></li>
+                        <li><button>Nome Playlist</button></li>
+                        <li><button>Nome Playlist</button></li>
+                        <li><button>Nome Playlist</button></li>
+                        <li><button>Nome Playlist</button></li>
+                    
                 </ul>
 
                 <ul class="ul-sidebar user">
-                <li><button><img class="mini icon space" src="img/download.svg" alt="">Installa l'app</button></li>
+                <li><button><img class="mini icon space" src="img/download.svg" alt=""><div class="hidden-xs">
+                    Installa l'app</div>
+                </button></li>
                 <li>
                     <div>
                         <div class="round">
                             <img class="icon" src="img/profile.svg" alt="">
+                            <div class="hidden-xs">
+                                Jhon Doe</div>
                         </div>
                     </div>
                 </li>
@@ -67,18 +71,20 @@
             <div class="content">
                 <nav class="nav-main">
                     <ul class="nav-ul">
-                        <li><button>In evidenza</button></li>
-                        <li><button>Podcast</button></li>
-                        <li><button>Classifiche</button></li>
-                        <li><button>Generi e mood</button>
+                        <li><button class="grey-btn special-btn">In evidenza
+                            <div class="special-line"></div>
+                        </button></li>
+                        <li><button class="grey-btn">Podcast</button></li>
+                        <li><button class="grey-btn">Classifiche</button></li>
+                        <li><button class="grey-btn">Generi e mood</button>
                         <li>
-                        <li><button>Nuove uscite</button></li>
-                        <li><button>Scopri</button></li>
+                        <li><button class="grey-btn">Nuove uscite</button></li>
+                        <li><button class="grey-btn">Scopri</button></li>
                     </ul>
                 </nav>
                 <section class="contenitor">
                     <!-- recently played -->
-                    <h2>Recently played</h2>
+                    <h3>Recently played</h3>
                     <div class="cover-contenitor clearfix">
                         <div class="cover">
 
