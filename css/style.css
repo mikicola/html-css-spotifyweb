@@ -232,6 +232,20 @@ button{
     overflow: hidden;
 }
 
+.round-contenitor{
+    flex-direction: column;
+    /* flex: 0 1 auto; */
+}
+
+.round-cover{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+
 .plus-icon{
     font-size: 2rem;
     padding-right: .5rem;
@@ -278,6 +292,10 @@ button{
     padding-top: 2rem;
 }
 
+.second, .third{
+    padding-top: 6rem;
+}
+
 h2{
     font-size: 1em;
     text-transform: uppercase;
@@ -298,6 +316,7 @@ h2{
 .flex{
     display: flex;
 }
+
 
 .cover{
     /* min-height: 150px;
@@ -334,17 +353,18 @@ h2{
 
 }
 
-.cover-contenitor h3{
+.cover-contenitor h4{
     color: white;
     text-align: center;
     font-size: 1rem;
 }
 
-.cover-contenitor h4{
+.cover-contenitor h5, .subtitle{
     color: #797b80;
     text-align: center;
     font-size: .7rem;
     padding-top: .3rem;
+    font-weight: 700;
 }
 
 #player {
