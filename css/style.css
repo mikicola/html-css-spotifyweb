@@ -23,6 +23,12 @@
         padding-left: 1rem;
     }
 
+    .cover{
+        
+        margin: 0 .5rem 1rem 0;
+        width: calc((100% - 3rem) / 2);
+    }
+
 }
 
 @media screen and (max-width: 540px) {
@@ -31,14 +37,13 @@
         align-items: center;
         margin-left: none;
     }
+
     .cover{
-        background-color: rebeccapurple;
+        
         margin: 0 .5rem 1rem 0;
         width: calc((100% - 3rem) / 3);
     }
     
-    
-
     .hidden-xs{
         display: none;
     }
@@ -321,7 +326,7 @@ h2{
 .cover{
     /* min-height: 150px;
     min-width: 150px; */
-    background-color: aqua;
+    /* background-color: aqua; */
     margin: 0 .5rem 1rem 0;
     float: left;
     width: calc((100% - 3rem) / 6);
